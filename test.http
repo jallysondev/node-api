@@ -1,0 +1,34 @@
+POST http://localhost:3333/memories
+Content-Type: application/json
+
+{
+    "content": "Oiiiiiiiiiiiiiiiiiiiiiiiiiii",
+    "coverUrl": "http://github.com/jallysondev.png",
+    "isPublic": true,
+    "userId": "1836d412-9dbd-4a82-8551-6547e083fcb1"
+}
+
+###
+
+GET http://localhost:3333/memories
+
+###
+
+GET http://localhost:3333/memories/7b91f00d-29f9-4e61-81ce-60cc5ac6d8e0
+
+###
+
+PUT http://localhost:3333/memories/7b91f00d-29f9-4e61-81ce-60cc5ac6d8e0
+Content-Type: application/json
+
+{
+    "content": "Oiiiiiiiiiiiiiiiiiiiiiiiiiii update",
+    "coverUrl": "http://github.com/jallysondev.png",
+    "isPublic": false,
+    "userId" : "1836d412-9dbd-4a82-8551-6547e083fcb1"
+}
+
+###
+
+DELETE http://localhost:3333/memories/3035f78f-d107-4388-9f7d-cea726d8ecee
+
